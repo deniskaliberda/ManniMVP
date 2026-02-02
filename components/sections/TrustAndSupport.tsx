@@ -299,7 +299,7 @@ export default function TrustAndSupport() {
                   {/* Quote */}
                   <blockquote className="text-center mb-8">
                     <p className="text-xl md:text-2xl text-gray-700 font-dmSans leading-relaxed mb-8">
-                      "{TESTIMONIALS[currentTestimonial].text}"
+                      &ldquo;{TESTIMONIALS[currentTestimonial].text}&rdquo;
                     </p>
                   </blockquote>
 

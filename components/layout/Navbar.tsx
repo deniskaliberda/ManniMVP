@@ -46,7 +46,7 @@ export default function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="font-outfit text-2xl font-bold"
               >
-                <span className="text-primary">Manni's</span>
+                <span className="text-primary">Manni&apos;s</span>
                 <span className="text-foreground ml-2">Fahrschule</span>
               </motion.div>
             </Link>

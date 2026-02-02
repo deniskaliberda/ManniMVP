@@ -237,7 +237,7 @@ export default function AblaufTimeline() {
           </div>
 
           <h1 className="font-outfit text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            So läuft's bei uns
+            So läuft&apos;s bei uns
           </h1>
           <p className="text-xl text-gray-600 font-dmSans max-w-2xl mx-auto">
             Von der Anmeldung bis zum bestandenen Führerschein – in 6 klaren

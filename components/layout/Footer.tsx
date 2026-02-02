@@ -61,7 +61,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-6">
               <div className="font-outfit text-2xl font-bold">
-                <span className="text-[#8B1B23]">Manni's</span>
+                <span className="text-[#8B1B23]">Manni&apos;s</span>
                 <span className="text-white ml-2">Fahrschule</span>
               </div>
             </Link>
@@ -205,7 +205,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-sm text-gray-500 font-dmSans">
-              © {currentYear} Manni's Fahrschule. Alle Rechte vorbehalten.
+              © {currentYear} Manni&apos;s Fahrschule. Alle Rechte vorbehalten.
             </p>
 
             {/* Legal Links */}
