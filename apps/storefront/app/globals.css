@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-red: #C8102E;
+    --brand-red-dark: #A00D24;
+    --lignoloc-green: #2D6A4F;
+    --lignoloc-green-light: #40916C;
+  }
+
+  body {
+    @apply bg-white text-brand-black antialiased;
+  }
+}

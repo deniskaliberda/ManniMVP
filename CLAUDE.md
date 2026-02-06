@@ -35,3 +35,49 @@ Handwerker denken in **Anwendungen** ("Ich muss Dachlatten befestigen"), nicht i
 - **Cloudinary** oder **Vercel Blob** – Bildverwaltung
 
 ## Monorepo-Struktur
+
+```
+nagel-paul/
+├── apps/
+│   ├── storefront/          # Next.js 14+ Frontend (App Router)
+│   │   ├── app/             # Next.js App Router pages
+│   │   ├── components/      # React components
+│   │   ├── lib/             # Utilities, Medusa SDK client
+│   │   └── public/          # Static assets
+│   └── backend/             # Medusa v2 Backend
+│       ├── src/
+│       │   ├── api/         # Custom API routes
+│       │   ├── modules/     # Custom modules (Compatibility, etc.)
+│       │   ├── subscribers/ # Event handlers
+│       │   ├── workflows/   # Medusa workflows
+│       │   └── admin/       # Admin UI extensions
+│       └── medusa-config.ts
+├── packages/
+│   └── shared/              # Shared TypeScript types
+│       └── src/types/       # Product, Compatibility, Application types
+├── turbo.json               # Turborepo pipeline config
+├── pnpm-workspace.yaml      # pnpm workspace definition
+└── package.json             # Root scripts (dev, build, lint, type-check)
+```
+
+## Entwicklung
+
+```bash
+# Alle Apps starten
+pnpm dev
+
+# Nur Storefront
+pnpm --filter @nagel-paul/storefront dev
+
+# Nur Backend
+pnpm --filter @nagel-paul/backend dev
+
+# Alles bauen
+pnpm build
+
+# Type-Check
+pnpm type-check
+
+# Lint
+pnpm lint
+```

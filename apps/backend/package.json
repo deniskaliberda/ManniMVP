@@ -1,0 +1,25 @@
+{
+  "name": "@nagel-paul/backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "medusa develop",
+    "build": "medusa build",
+    "start": "medusa start",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit",
+    "seed": "medusa exec ./src/scripts/seed.ts",
+    "db:migrate": "medusa db:migrate",
+    "clean": "rm -rf .medusa node_modules"
+  },
+  "dependencies": {
+    "@medusajs/framework": "^2.13.0",
+    "@medusajs/medusa": "^2.13.0",
+    "@nagel-paul/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "eslint": "^8",
+    "typescript": "^5.7.3"
+  }
+}
